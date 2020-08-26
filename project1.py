@@ -13,7 +13,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 
-data=pd.read_csv("data.csv")
+data=pd.read_csv("Project1.csv")
 data
 
 x=data.iloc[:,0].values
