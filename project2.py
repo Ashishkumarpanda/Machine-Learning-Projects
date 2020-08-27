@@ -23,7 +23,7 @@ y=data.iloc[:,2].values
 x=x.reshape(-1,1)
 y=y.reshape(-1,1)
 
-poly=PolynomialFeatures(degree=4)
+poly=PolynomialFeatures(degree=8)
 x_poly=poly.fit_transform(x)
 poly.fit(x_poly,y)
 
