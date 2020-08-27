@@ -14,7 +14,7 @@ from sklearn.svm import SVR
 import matplotlib.pyplot as plt
 import numpy as np
 
-data=pd.read_csv("Project2.csv")
+data=pd.read_csv("Project3.csv")
 data.head(5)
 
 x=data.iloc[:,1].values
@@ -42,7 +42,7 @@ plt.show()
 sc_x_val=sc_x.transform(np.array([[6.5]]))
 sc_y_pred=reg.predict(sc_x_val)
 final_pred=sc_y.inverse_transform(sc_y_pred)
-final_pred
-
-from google.colab import files
-a=files.upload()
+print(final_pred)
+#for importing files on google colab
+#from google.colab import files
+#a=files.upload()
